@@ -1,0 +1,42 @@
+Perceptron	Perceptron.py	/^class Perceptron(object):$/;"	c
+__init__	Perceptron.py	/^	def __init__(self, input_num, activator):$/;"	m	class:Perceptron
+__str__	Perceptron.py	/^	def __str__(self):$/;"	m	class:Perceptron	file:
+_one_iteration	Perceptron.py	/^	def _one_iteration(self, input_vecs, labels, rate):$/;"	m	class:Perceptron
+_update_weights	Perceptron.py	/^	def _update_weights(self, input_vec, output, label, rate):$/;"	m	class:Perceptron
+predict	Perceptron.py	/^	def predict(self, input_vec):$/;"	m	class:Perceptron
+train	Perceptron.py	/^	def train(self, input_vec, labels, iteration, rate):$/;"	m	class:Perceptron
+LinearUnit	lineunit.py	/^class LinearUnit(Perceptron):$/;"	c
+Perceptron	lineunit.py	/^from Perceptron import Perceptron$/;"	i
+__init__	lineunit.py	/^	def __init__(self, input_num):$/;"	m	class:LinearUnit
+f	lineunit.py	/^f = lambda x: x$/;"	v
+LinearUnit	testLinearUnit.py	/^from lineunit import LinearUnit$/;"	i
+get_training_dataset	testLinearUnit.py	/^def get_training_dataset():$/;"	f
+linear_unit	testLinearUnit.py	/^	linear_unit = train_linear_unit()$/;"	v
+train_linear_unit	testLinearUnit.py	/^def train_linear_unit():$/;"	f
+ImageLoader	testNetwork.py	/^class ImageLoader(Loader):$/;"	c
+LabelLoader	testNetwork.py	/^class LabelLoader(Loader):$/;"	c
+Loader	testNetwork.py	/^class Loader(object):$/;"	c
+__init__	testNetwork.py	/^	def __init__(self, path, count):$/;"	m	class:Loader
+evaluate	testNetwork.py	/^def evaluate(network, test_data_set, test_labels):$/;"	f
+get_file_content	testNetwork.py	/^    def get_file_content(self):$/;"	f	function:Loader.__init__
+get_one_sample	testNetwork.py	/^	def get_one_sample(self, picture):$/;"	m	class:ImageLoader
+get_picture	testNetwork.py	/^	def get_picture(self, content, index):$/;"	m	class:ImageLoader
+get_result	testNetwork.py	/^def get_result(vec):$/;"	f
+get_test_data_set	testNetwork.py	/^def get_test_data_set():$/;"	f
+get_training_data_set	testNetwork.py	/^def get_training_data_set():$/;"	f
+load	testNetwork.py	/^	def load(self):$/;"	m	class:ImageLoader
+load	testNetwork.py	/^	def load(self):$/;"	m	class:LabelLoader
+norm	testNetwork.py	/^	def norm(self, label):$/;"	m	class:LabelLoader
+to_int	testNetwork.py	/^	def to_int(self, byte):$/;"	m	class:Loader
+train_and_evaluate	testNetwork.py	/^def train_and_evaluate():$/;"	f
+Perceptron	testPerceptron.py	/^from Perceptron import Perceptron$/;"	i
+and_perception	testPerceptron.py	/^	and_perception = train_and_perception()$/;"	v
+f	testPerceptron.py	/^def f(x):$/;"	f
+get_training_dataset	testPerceptron.py	/^def get_training_dataset():$/;"	f
+train_and_perception	testPerceptron.py	/^def train_and_perception():$/;"	f
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
